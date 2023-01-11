@@ -1,0 +1,21 @@
+#If the bill was $150.00, split between 5 people, with 12% tip. 
+#Each person should pay (150.00 / 5) * 1.12 = 33.6
+#Format the result to 2 decimal places = 33.60
+
+#Greeting
+print("Welcome to the tip calculator.\n")
+#Input gathering
+totalBill_input = input("What was the total bill? $")
+percentageTip_input = input("What percentage tip would you like to give? 10, 12, 15? ")
+peopleSplit_input = input("How many people to split the bill? ")
+#Conversions
+totalBill_float = float(totalBill_input)
+percentageTip_float = float(percentageTip_input)
+peopleSplit_float = float(peopleSplit_input)
+#Calculations
+percentageTip = percentageTip_float / 100 + 1
+grandtotal_w_tip = percentageTip * totalBill_float
+peopleSplit_total = grandtotal_w_tip / peopleSplit_float
+rounded_total = round(peopleSplit_total,2)
+#Output Display
+print(f'${rounded_total:.2f}')
