@@ -18,4 +18,4 @@ grandtotal_w_tip = percentageTip * totalBill_float
 peopleSplit_total = grandtotal_w_tip / peopleSplit_float
 rounded_total = round(peopleSplit_total,2)
 #Output Display
-print(f'${rounded_total:.2f}')
+print(f"\nEach person should pay: ${rounded_total:.2f}")
