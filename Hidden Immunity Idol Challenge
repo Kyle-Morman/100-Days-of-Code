@@ -1,0 +1,39 @@
+print('''
+*******************************************************************************
+                                o--8--=g=--8--o     
+                               /      .'       \
+                               8      '.       8
+                                \             /
+                                 o           o
+                                  \         /
+                                   8       8
+                                    \     /
+                                     o   o
+                                      \_/
+                                       =
+                                     __^__
+                                    /\___/\
+                                   /_/ * \_\
+                                   \ \_*_/ /
+                                    \/___\/
+*******************************************************************************
+''')
+print("Welcome to the Hidden Immunity Idol Challenge!")
+print("Your mission is to find the hidden immunity idol to save yourself from elimination at tribal council.\n")
+
+#Write your code below this line 👇
+choice1 = input('You just arrived by boat at a desolate island. Do you want to go right and try find the hidden immunity idol or left to start building camp with the others? Type "right" or "left"\n\n').lower()
+if choice1 == "right":
+    print("\nYou found nothing and were voted out at the first tribal concil. Game over.")
+elif choice1 == "left":
+    choice2 = input('\nCongratulations, you survived the first tribal council! Do you want to go for a swim by yourself or wait and gather firewood with another tribe member? Type "swim" or "wait"\n\n').lower()
+    if choice2 == "swim":
+        print("\nYou thought you were safe by yourself? You were blindsided at the next tribal council and voted out. Game over.")
+    elif choice2 == "wait":
+        choice3 = input('\nCongratulations! You made it to Day 38. You now need to find the hidden immunity idol to have a 1 in 3 shot at winning one million dollars. Do you look in a Tree, at camp underneath the tribes bamboo bed or try to play the pendant you saw at the last tribal council attached to the podium? Type "tree", "bamboo bed" or "podium"\n\n').lower()
+        if choice3 == "tree":
+            print("\nYou found a FAKE hidden immunity idol and were voted out. Game over.")
+        elif choice3 == "bamboo bed":
+            print("\nCongratulations! You found the hidden immunity idol and played it at tribal council. On Day 39, you pled your case to the jury, and was voted the 1 million dollar WINNER by unamimous vote!")
+        else:
+            print('\nJeff asks you if you want to play the pendant attached to the podium. You say, "yes". Jeff then states, "This is NOT a hidden immunity idol - it is only decor". You were subsequently voted out. Game over.')
